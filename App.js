@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ListScreen from './app/screens/ListScreen';
 
 export default function App() {
   const name = "Biswajit Biswas";
