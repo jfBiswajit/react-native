@@ -6,6 +6,7 @@ const ImageList = (pros) => {
     <View>
       <Image source={pros.img} />
       <Text> {pros.title} </Text>
+      <Text> Image Score - {pros.score}</Text>
     </View>
   );
 };

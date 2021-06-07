@@ -8,12 +8,18 @@ const ImageScreen = (pros) => {
       <ImageList
         title="Forest"
         img={require('../../assets/images/forest.jpg')}
+        score={5}
       />
       <ImageList
         title="Mountain"
         img={require('../../assets/images/mountain.jpg')}
+        score={5}
       />
-      <ImageList title="Beach" img={require('../../assets/images/beach.jpg')} />
+      <ImageList
+        title="Beach"
+        img={require('../../assets/images/beach.jpg')}
+        score={8}
+      />
     </View>
   );
 };
