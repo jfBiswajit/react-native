@@ -1,24 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import ListScreen from './app/screens/ListScreen';
+import {View, Text} from 'react-native'
+import { createStackNavigator } from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
 
-export default function App() {
-  const name = "Biswajit Biswas";
-  
+const Stack = createStackNavigator();
+
+function ScreenA() {
   return (
-    <View style={styles.container}>
-      { ListScreen() }
+    <View>
+      <Text>Screen A</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    top: 50,
-  },
-});
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home Screen" component={ScreenA} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+
+export default App;
