@@ -3,6 +3,8 @@ import {View, Text} from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
+import ListScreen from './app/screens/ListScreen';
+
 const Stack = createStackNavigator();
 
 function ScreenA() {
@@ -17,7 +19,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home Screen" component={ScreenA} />
+        <Stack.Screen name="Home Screen" component={ListScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
