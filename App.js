@@ -7,14 +7,6 @@ import ListScreen from './app/screens/ListScreen';
 
 const Stack = createStackNavigator();
 
-function ScreenA() {
-  return (
-    <View>
-      <Text>Screen A</Text>
-    </View>
-  );
-}
-
 function App() {
   return (
     <NavigationContainer>
