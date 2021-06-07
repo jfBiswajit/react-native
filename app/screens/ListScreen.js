@@ -5,24 +5,29 @@ const ListScreen = () => {
   const friends = [
     {
       name: 'One',
-      age: 20
+      age: 20,
     },
     {
       name: 'Two',
-      age: 30
+      age: 30,
     },
     {
       name: 'Three',
-      age: 40
-    }
+      age: 40,
+    },
   ];
 
   return (
     <FlatList
       data={friends}
-      keyExtractor={friend => friend.name}
+      keyExtractor={(friend) => friend.name}
       renderItem={({ item }) => {
-        return <Text style={style.textStyle}> Name: {item.name} - Age: {item.age} </Text>;
+        return (
+          <Text style={style.textStyle}>
+            {' '}
+            Name: {item.name} - Age: {item.age}{' '}
+          </Text>
+        );
       }}
     />
   );
@@ -30,8 +35,8 @@ const ListScreen = () => {
 
 const style = StyleSheet.create({
   textStyle: {
-    marginVertical: 50
-  }
+    marginVertical: 50,
+  },
 });
 
 export default ListScreen;
