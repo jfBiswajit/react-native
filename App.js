@@ -8,10 +8,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 45 }}>Getting started with react native</Text>
-      <Text style={{ fontSize: 20 }}>Hello there!</Text>
-      <Text>{name}</Text>
-      <StatusBar style="auto" />
+      { ListScreen() }
     </View>
   );
 }
@@ -22,5 +19,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    top: 50,
   },
 });
