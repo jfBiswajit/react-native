@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import ListScreen from './app/screens/ListScreen';
 import HomeScreen from './app/screens/HomeScreen';
+import ImageList from './app/screens/ImageList';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,11 @@ function App() {
           name="List"
           component={ListScreen}
           options={{ title: 'Friend List' }}
+        />
+        <Stack.Screen
+          name="image"
+          component={ImageList}
+          options={{ title: 'Images' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
