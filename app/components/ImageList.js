@@ -1,8 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Button, Image } from 'react-native';
 
 const ImageList = (pros) => {
-  return <Text>Imgae List</Text>;
+  return (
+    <View>
+      <Image source={pros.img} />
+      <Text> {pros.title} </Text>
+    </View>
+  );
 };
 
 export default ImageList;
