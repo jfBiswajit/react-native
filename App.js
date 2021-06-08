@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import FriendScreen from './app/screens/FriendScreen';
 import HomeScreen from './app/screens/HomeScreen';
 import ImageList from './app/screens/ImageScreen';
+import CounterScreen from './app/screens/CounterScreen';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,11 @@ function App() {
           name="image"
           component={ImageList}
           options={{ title: 'Images' }}
+        />
+        <Stack.Screen
+          name="counter"
+          component={CounterScreen}
+          options={{ title: 'Counter' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

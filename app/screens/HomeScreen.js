@@ -5,12 +5,16 @@ const HomeScreen = (pros) => {
   return (
     <View>
       <Button
-        title="Friend (Array)"
+        title="Friend List (Array)"
         onPress={() => pros.navigation.navigate('List')}
       />
       <Button
         title="Image (Component)"
         onPress={() => pros.navigation.navigate('image')}
+      />
+      <Button
+        title="Counter (Component)"
+        onPress={() => pros.navigation.navigate('counter')}
       />
     </View>
   );
