@@ -8,6 +8,7 @@ import ImageList from './app/screens/ImageScreen';
 import CounterScreen from './app/screens/CounterScreen';
 import RandomColor from './app/screens/RandomColor';
 import MoreColor from './app/screens/MoreColor';
+import TextScreen from './app/screens/TextScreen';
 
 const Stack = createStackNavigator();
 
@@ -44,6 +45,11 @@ function App() {
           name="multiple_state"
           component={MoreColor}
           options={{ title: 'Add More Color' }}
+        />
+        <Stack.Screen
+          name="text_input"
+          component={TextScreen}
+          options={{ title: 'Text Input' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

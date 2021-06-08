@@ -24,6 +24,10 @@ const HomeScreen = (pros) => {
         title="More Color (Reducer)"
         onPress={() => pros.navigation.navigate('multiple_state')}
       />
+      <Button
+        title="Text Input (Reducer)"
+        onPress={() => pros.navigation.navigate('text_input')}
+      />
     </View>
   );
 };
