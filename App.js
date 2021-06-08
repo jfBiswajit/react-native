@@ -2,7 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-import FriendList from './app/screens/FriendList';
+import FriendScreen from './app/screens/FriendScreen';
 import HomeScreen from './app/screens/HomeScreen';
 import ImageList from './app/screens/ImageScreen';
 
@@ -19,7 +19,7 @@ function App() {
         />
         <Stack.Screen
           name="List"
-          component={FriendList}
+          component={FriendScreen}
           options={{ title: 'Friend List' }}
         />
         <Stack.Screen
