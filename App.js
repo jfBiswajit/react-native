@@ -6,6 +6,7 @@ import FriendScreen from './app/screens/FriendScreen';
 import HomeScreen from './app/screens/HomeScreen';
 import ImageList from './app/screens/ImageScreen';
 import CounterScreen from './app/screens/CounterScreen';
+import RandomColor from './app/screens/RandomColor';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,11 @@ function App() {
           name="counter"
           component={CounterScreen}
           options={{ title: 'Counter' }}
+        />
+        <Stack.Screen
+          name="colors"
+          component={RandomColor}
+          options={{ title: 'Colors' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

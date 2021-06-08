@@ -16,6 +16,10 @@ const HomeScreen = (pros) => {
         title="Counter (State)"
         onPress={() => pros.navigation.navigate('counter')}
       />
+      <Button
+        title="Colors (State)"
+        onPress={() => pros.navigation.navigate('colors')}
+      />
     </View>
   );
 };
