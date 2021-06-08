@@ -6,9 +6,9 @@ const BoxModelScreen = () => {
     <View style={style.view}>
       <Text style={style.text}>Box Model</Text>
       <View style={style.container}>
-        <Text style={[style.item, { backgroundColor: '#3498db' }]}>Item One</Text>
-        <Text style={[style.item, { backgroundColor: '#27ae60' }]}>Item Two</Text>
-        <Text style={[style.item, { backgroundColor: '#d35400' }]}>Item Three</Text>
+        <Text style={[style.item, { backgroundColor: '#3498db' }, {alignSelf: 'flex-end'}]}>Item One</Text>
+        <Text style={[style.item, { backgroundColor: '#27ae60' },{alignSelf: 'center'}]}>Item Two</Text>
+        <Text style={[style.item, { backgroundColor: '#d35400' }, {alignSelf: 'flex-start'}]}>Item Three</Text>
       </View>
     </View>
   );
