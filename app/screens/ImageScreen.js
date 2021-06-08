@@ -24,4 +24,6 @@ const ImageScreen = (pros) => {
   );
 };
 
+const style = StyleSheet.create({});
+
 export default ImageScreen;

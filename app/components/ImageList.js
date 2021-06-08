@@ -11,4 +11,6 @@ const ImageList = (pros) => {
   );
 };
 
+const style = StyleSheet.create({});
+
 export default ImageList;
