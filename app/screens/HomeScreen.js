@@ -13,7 +13,7 @@ const HomeScreen = (pros) => {
         onPress={() => pros.navigation.navigate('image')}
       />
       <Button
-        title="Counter (Component)"
+        title="Counter (State)"
         onPress={() => pros.navigation.navigate('counter')}
       />
     </View>
