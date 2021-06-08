@@ -21,7 +21,7 @@ const HomeScreen = (pros) => {
         onPress={() => pros.navigation.navigate('colors')}
       />
       <Button
-        title="More Color (Multiple State)"
+        title="More Color (Reducer)"
         onPress={() => pros.navigation.navigate('multiple_state')}
       />
     </View>
