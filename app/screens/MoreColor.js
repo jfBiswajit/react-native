@@ -5,15 +5,15 @@ import ColorCounter from '../components/ColorCounter';
 const COLOR_INCREMENT_BY = 50;
 
 const reducer = (state, action) => {
-  if (action.colorTochange === 'red') {
+  if (action.colorToChange === 'red') {
     return { ...state, red: state.red + action.amount };
   }
 
-  if (action.colorTochange === 'green') {
+  if (action.colorToChange === 'green') {
     return { ...state, green: state.green + action.amount };
   }
 
-  if (action.colorTochange === 'blue') {
+  if (action.colorToChange === 'blue') {
     return { ...state, blue: state.blue + action.amount };
   }
 
@@ -29,32 +29,29 @@ const MoreColor = () => {
       <ColorCounter
         color="Red"
         onIncrease={() =>
-          dispatch({ colorTochange: 'red', amount: COLOR_INCREMENT_BY })
+          dispatch({ colorToChange: 'red', amount: COLOR_INCREMENT_BY })
         }
-        onDecrease={dispatch({
-          colorTochange: 'red',
-          amount: -1 * COLOR_INCREMENT_BY,
-        })}
+        onDecrease={() =>
+          dispatch({ colorToChange: 'red', amount: -1 * COLOR_INCREMENT_BY })
+        }
       />
       <ColorCounter
         color="Green"
         onIncrease={() =>
-          dispatch({ colorTochange: 'green', amount: COLOR_INCREMENT_BY })
+          dispatch({ colorToChange: 'green', amount: COLOR_INCREMENT_BY })
         }
-        onDecrease={dispatch({
-          colorTochange: 'green',
-          amount: -1 * COLOR_INCREMENT_BY,
-        })}
+        onDecrease={() =>
+          dispatch({ colorToChange: 'green', amount: -1 * COLOR_INCREMENT_BY })
+        }
       />
       <ColorCounter
         color="Blue"
         onIncrease={() =>
-          dispatch({ colorTochange: 'blue', amount: COLOR_INCREMENT_BY })
+          dispatch({ colorToChange: 'blue', amount: COLOR_INCREMENT_BY })
         }
-        onDecrease={dispatch({
-          colorTochange: 'blue',
-          amount: -1 * COLOR_INCREMENT_BY,
-        })}
+        onDecrease={() =>
+          dispatch({ colorToChange: 'blue', amount: -1 * COLOR_INCREMENT_BY })
+        }
       />
       <View
         style={{
