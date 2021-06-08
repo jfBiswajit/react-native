@@ -1,17 +1,32 @@
-import React from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
 
 const CounterScreen = () => {
+  const [counter, setCounter] = useState(0);
+
   return (
     <View>
-      <Text>Counter:</Text>
+      <Button
+        title="Increase"
+        onPress={() => {
+          setCounter(counter + 1);
+        }}
+      />
+      <Button
+        title="Decrease"
+        onPress={() => {
+          setCounter(counter - 1);
+        }}
+      />
+      <Text style={style.textStyle}>{counter}</Text>
     </View>
   );
 };
 
 const style = StyleSheet.create({
   textStyle: {
-    marginVertical: 50,
+    fontSize: 50,
+    textAlign: 'center',
   },
 });
 
