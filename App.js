@@ -9,6 +9,7 @@ import CounterScreen from './app/screens/CounterScreen';
 import RandomColor from './app/screens/RandomColor';
 import MoreColor from './app/screens/MoreColor';
 import TextScreen from './app/screens/TextScreen';
+import BoxModelScreen from './app/screens/BoxModelScreen';
 
 const Stack = createStackNavigator();
 
@@ -50,6 +51,11 @@ function App() {
           name="text_input"
           component={TextScreen}
           options={{ title: 'Text Input' }}
+        />
+        <Stack.Screen
+          name="box_model"
+          component={BoxModelScreen}
+          options={{ title: 'Box Model' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

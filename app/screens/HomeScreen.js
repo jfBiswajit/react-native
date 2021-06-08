@@ -28,6 +28,10 @@ const HomeScreen = (pros) => {
         title="Text Input (State)"
         onPress={() => pros.navigation.navigate('text_input')}
       />
+      <Button
+        title="Box Model"
+        onPress={() => pros.navigation.navigate('box_model')}
+      />
     </View>
   );
 };
