@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 
-const ListScreen = () => {
+const FriendList = () => {
   const friends = [
     {
       name: 'One',
@@ -38,4 +38,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default ListScreen;
+export default FriendList;
