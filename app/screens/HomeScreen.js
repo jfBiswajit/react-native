@@ -25,7 +25,7 @@ const HomeScreen = (pros) => {
         onPress={() => pros.navigation.navigate('multiple_state')}
       />
       <Button
-        title="Text Input (Reducer)"
+        title="Text Input (State)"
         onPress={() => pros.navigation.navigate('text_input')}
       />
     </View>
