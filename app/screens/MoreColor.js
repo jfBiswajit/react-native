@@ -31,7 +31,7 @@ const MoreColor = () => {
         onIncrease={() =>
           dispatch({ colorTochange: 'red', amount: COLOR_INCREMENT_BY })
         }
-        onDecrese={dispatch({
+        onDecrease={dispatch({
           colorTochange: 'red',
           amount: -1 * COLOR_INCREMENT_BY,
         })}
@@ -41,7 +41,7 @@ const MoreColor = () => {
         onIncrease={() =>
           dispatch({ colorTochange: 'green', amount: COLOR_INCREMENT_BY })
         }
-        onDecrese={dispatch({
+        onDecrease={dispatch({
           colorTochange: 'green',
           amount: -1 * COLOR_INCREMENT_BY,
         })}
@@ -51,7 +51,7 @@ const MoreColor = () => {
         onIncrease={() =>
           dispatch({ colorTochange: 'blue', amount: COLOR_INCREMENT_BY })
         }
-        onDecrese={dispatch({
+        onDecrease={dispatch({
           colorTochange: 'blue',
           amount: -1 * COLOR_INCREMENT_BY,
         })}
