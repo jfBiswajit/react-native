@@ -7,6 +7,7 @@ import HomeScreen from './app/screens/HomeScreen';
 import ImageList from './app/screens/ImageScreen';
 import CounterScreen from './app/screens/CounterScreen';
 import RandomColor from './app/screens/RandomColor';
+import MoreColor from './app/screens/MoreColor';
 
 const Stack = createStackNavigator();
 
@@ -38,6 +39,11 @@ function App() {
           name="colors"
           component={RandomColor}
           options={{ title: 'Colors' }}
+        />
+        <Stack.Screen
+          name="multiple_state"
+          component={MoreColor}
+          options={{ title: 'Add More Color' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

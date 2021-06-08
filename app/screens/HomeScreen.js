@@ -20,6 +20,10 @@ const HomeScreen = (pros) => {
         title="Colors (State, FlatList)"
         onPress={() => pros.navigation.navigate('colors')}
       />
+      <Button
+        title="More Color (Multiple State)"
+        onPress={() => pros.navigation.navigate('multiple_state')}
+      />
     </View>
   );
 };
